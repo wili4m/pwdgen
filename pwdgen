@@ -1,0 +1,61 @@
+#!/bin/bash
+
+function help {
+	
+    echo -e "\nNo words are needed. You just need to pay attemption.\n" 
+    
+    exit 0
+
+}
+
+function genAlphaPwd {
+	
+    echo "" ; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w $pwdSize | head -n5 ; echo ""
+    exit 0
+
+}
+
+function genSpecCharPwd {
+	
+    echo "" ; cat /dev/urandom | tr -dc 'a-zA-Z0-9-_!@#$%&*+' | fold -w  $pwdSize | head -n5 ; echo ""
+    exit 0
+
+}
+
+function pwdSpec {
+	
+	echo -e "\n[1] Alphanumeric."
+	echo -e "[2] With special characters."
+	echo -ne "\n< Inform your choice: "
+	read pwdStrength
+
+	if [ -z $pwdStrength ]; then
+
+		help
+
+	else
+
+	    echo -ne "< Password size: "
+	    read size
+
+	    if $(echo $size | grep -qE "^[0-9]+$"); then
+
+            pwdSize=$size
+
+	        case $pwdStrength in
+                1) genAlphaPwd ;;
+                2) genSpecCharPwd ;;
+                *) help ;;
+            esac
+
+        else
+
+	        echo "erro" # help
+
+        fi
+
+    fi
+
+}
+
+pwdSpec
