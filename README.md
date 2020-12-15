@@ -1,5 +1,6 @@
 # pwdgen
-A simple script to create random passwords on Linux
+A simple script to create random passwords on Linux. It has no tricks. It's simple. You can read the code easily!
+
 
 # How setup it?
 
@@ -23,7 +24,7 @@ First, you need to inform the type of password you wish (alphanumeric or with sp
 
 Five options of passwords will be informed.
 
-``w1l@mandragora:~> pwdgen 
+```w1l@mandragora:~> pwdgen 
 
 [1] Alphanumeric.
 [2] With special characters.
@@ -35,8 +36,4 @@ OCK5hTEUtQGBghj
 ltGtyiaxNKrazyf
 b1DW7CEbfCsUiKA
 VZks9YKj7i1d4Ez
-FPc8sPMFDwymriR``
-
-## How it works?
-
-It has no tricks. It's simple. You can read the code easily!
+FPc8sPMFDwymriR```
