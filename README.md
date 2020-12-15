@@ -23,7 +23,7 @@ First, you need to inform the type of password you wish (alphanumeric or with sp
 
 Five options of passwords will be informed.
 
-`w1l@mandragora:~> pwdgen 
+``w1l@mandragora:~> pwdgen 
 
 [1] Alphanumeric.
 [2] With special characters.
@@ -35,7 +35,7 @@ OCK5hTEUtQGBghj
 ltGtyiaxNKrazyf
 b1DW7CEbfCsUiKA
 VZks9YKj7i1d4Ez
-FPc8sPMFDwymriR`
+FPc8sPMFDwymriR``
 
 ## How it works?
 
