@@ -20,7 +20,7 @@ This is it!
 
 If you used a path that is included at $PATH environment variable, you can run `pwdgen` or another name that you choose. Otherwise, you'll need to run that script using the absolute path like this; `/path/to/my/script`.
 
-First, you need to inform the type of password you wish (alphanumeric or with special characters) and the password size (eg: 10 characters).
+First, you need to inform the type of password you wish (alphanumeric or with special characters) and the password length (eg: 10 characters).
 
 Five options of passwords will be informed.
 
