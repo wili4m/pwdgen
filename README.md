@@ -22,7 +22,7 @@ If you used a path that is included at $PATH environment variable, you can run `
 
 First, you need to inform the type of password you wish (alphanumeric or with special characters) and the password length (eg: 10 characters).
 
-Five options of passwords will be informed.
+Five passwords will be created using your criterion and it will be informed.
 
 ```w1l@mandragora:~> pwdgen 
 
